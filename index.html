@@ -128,6 +128,8 @@ section{padding:clamp(3.5rem,7vw,6rem) 0}
 }
 .builds li:last-child{border-bottom:1px solid var(--rule)}
 .builds li>*{min-width:0}
+.builds .thing a{color:var(--marker);text-decoration:none;border-bottom:2px solid var(--marker)}
+.builds .thing a:hover{color:var(--ink);border-color:var(--ink)}
 .builds .thing{
   font-family:var(--display);font-weight:600;font-size:1.15rem;letter-spacing:-.01em;
   min-width:10rem;max-width:13rem;color:var(--ink);
@@ -135,7 +137,9 @@ section{padding:clamp(3.5rem,7vw,6rem) 0}
 .builds p{margin:0;color:var(--pine);max-width:40em}
 @media(max-width:46rem){
   .builds li{grid-template-columns:1fr;gap:.5rem}
-  .builds .thing{max-width:none}
+  .builds .thing a{color:var(--marker);text-decoration:none;border-bottom:2px solid var(--marker)}
+.builds .thing a:hover{color:var(--ink);border-color:var(--ink)}
+.builds .thing{max-width:none}
 }
 
 /* photos */
@@ -338,12 +342,8 @@ footer a:hover{color:var(--marker)}
     </div>
     <ul class="builds">
       <li>
-        <div class="thing">The DOT podcast</div>
-        <p>Student-hosted conversations about science and the people doing it, made for listeners who are not scientists yet.</p>
-      </li>
-      <li>
-        <div class="thing">Tutoring and mentorship</div>
-        <p>Volunteer student tutors offering free online academic support, and mentorship connecting younger students with older ones already deep in a subject.</p>
+        <div class="thing"><a href="https://open.spotify.com/show/5WDJVTDdF0kmS9fPhKrYFc">Connecting the DOTs</a></div>
+        <p>An interview podcast about what STEM careers actually look like day to day, hosted by Teresa Pan and Leo van Jaarsveld. Guests so far include a professor emeritus of atmospheric science at UBC and a retired civil engineer. Listen on Spotify.</p>
       </li>
       <li>
         <div class="thing">The Centrifuge</div>
