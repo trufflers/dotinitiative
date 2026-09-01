@@ -59,20 +59,15 @@ section{padding:clamp(2.5rem,5vw,4rem) 0}
 .section-head{max-width:36em;margin-bottom:clamp(1.75rem,3.5vw,2.5rem)}
 .section-head p{margin-top:.9rem;color:var(--pine)}
 
-/* lead */
-.lead-card{display:grid;grid-template-columns:auto 1fr;gap:clamp(1rem,3vw,2rem);align-items:baseline;
-  border-top:3px solid var(--marker);padding-top:1.5rem;max-width:46rem}
-.lead-card>*{min-width:0}
-.lead-card .who{font-family:var(--display);font-weight:800;font-size:clamp(1.5rem,1.2rem + 1.2vw,2rem);letter-spacing:-.03em;white-space:nowrap}
-.lead-card .role{color:var(--pine);margin:0}
-@media(max-width:40rem){.lead-card{grid-template-columns:1fr;gap:.4rem}.lead-card .who{white-space:normal}}
-
-/* board roster */
+/* departments — every person gets identical weight */
+.dept{margin-bottom:clamp(2.5rem,5vw,3.75rem)}
+.dept:last-child{margin-bottom:0}
+.dept h2{font-size:clamp(1.35rem,1.1rem + 1vw,1.75rem);padding-bottom:.75rem;border-bottom:2px solid var(--ink)}
 .roster{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0 clamp(1.5rem,3vw,2.5rem)}
 @media(max-width:52rem){.roster{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:34rem){.roster{grid-template-columns:1fr}}
-.roster li{min-width:0;border-top:1px solid var(--rule);padding:1.1rem 0}
-.roster b{display:block;font-family:var(--display);font-weight:600;font-size:1.1rem;letter-spacing:-.01em}
+.roster li{min-width:0;border-bottom:1px solid var(--rule);padding:1.1rem 0}
+.roster b{display:block;font-family:var(--display);font-weight:600;font-size:1.12rem;letter-spacing:-.015em}
 .roster span{display:block;margin-top:.25rem;font-size:.92rem;color:var(--pine);line-height:1.4}
 
 /* club leaders */
@@ -117,40 +112,68 @@ footer a:hover{color:var(--marker)}
 
   <div class="page-head wrap">
     <h1>Every person here is a student.</h1>
-    <p class="lede">DOT is run by an executive board of ten, with programs delivered by student leaders at each participating school. Nobody is paid. Everyone is doing this around a full course load.</p>
+    <p class="lede">Thirteen of us across four departments, plus student leaders at each participating school. Nobody is paid. Everyone is doing this around a full course load.</p>
   </div>
 
   <section class="wrap" style="padding-top:0">
-    <div class="lead-card">
-      <div class="who">Teresa Pan</div>
-      <div>
-        <p class="role">Executive Director &amp; founder. Sets programming direction, runs partnerships and outreach to schools, and leads the Thursday sessions at West Point Grey Academy.</p>
-      </div>
-    </div>
-  </section>
 
-  <section class="band">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>The executive board</h2>
-        <p>Ten students holding distinct portfolios, so that no part of the organization depends on one person.</p>
-      </div>
+    <div class="dept">
+      <h2>Executive leadership</h2>
       <ul class="roster">
-        <li><b>[Name]</b><span>Director of Internal Affairs — board coordination, meetings, and records</span></li>
-        <li><b>[Name]</b><span>Director of STEM Programs — session design and curriculum</span></li>
-        <li><b>[Name]</b><span>Director of Non-STEM Programs — tutoring and mentorship</span></li>
-        <li><b>[Name]</b><span>Director of Logistics &amp; Inventory — materials, kits, and supply runs</span></li>
-        <li><b>[Name]</b><span>Director of Finance — budgeting, fundraising, and grant reporting</span></li>
-        <li><b>[Name]</b><span>Director of Marketing — social media and communications</span></li>
-        <li><b>[Name]</b><span>Director of IT — website, systems, and digital resources</span></li>
-        <li><b>[Name]</b><span>Director of Volunteer Engagement — recruiting and supporting volunteers</span></li>
-        <li><b>[Name]</b><span>Director of Events — fundraisers and one-off workshops</span></li>
+        <li><b>Teresa Pan</b><span>Founder &amp; Executive Director</span></li>
+        <li><b>Reyna Li</b><span>Co-Director of Programs</span></li>
+        <li><b>Vienna Chou</b><span>Co-Director of Programs</span></li>
       </ul>
     </div>
+
+    <div class="dept">
+      <h2>Education</h2>
+      <ul class="roster">
+        <li><b>Kian Shahsavari</b><span>Director of Education</span></li>
+        <li><b>Isaac Liu</b><span>Co-Director of Education</span></li>
+      </ul>
+    </div>
+
+    <div class="dept">
+      <h2>Operations</h2>
+      <ul class="roster">
+        <li><b>Shannon Li</b><span>Director of Internal Affairs</span></li>
+        <li><b>Rania Khosa</b><span>Director of Volunteer Engagement</span></li>
+        <li><b>Isabel Giovanni</b><span>Director of Social Media &amp; Communications</span></li>
+        <li><b>Verina Leung</b><span>Director of Events</span></li>
+        <li><b>Leo van Jaarsveld</b><span>Director of Digital Operations, and co-host of Connecting the DOTs</span></li>
+        <li><b>Karlyne Chai</b><span>Inventory Manager</span></li>
+      </ul>
+    </div>
+
+    <div class="dept">
+      <h2>Finance</h2>
+      <ul class="roster">
+        <li><b>Amelia Wells</b><span>Director of Finance</span></li>
+        <li><b>Catherine Zhu</b><span>Assistant Director of Finance</span></li>
+      </ul>
+    </div>
+
   </section>
 
   <section class="band">
     <div class="wrap">
+    <div class="section-head">
+      <h2>In the room on Thursdays</h2>
+      <p>Planning and running the weekly club at West Point Grey Academy sits with four of us, on top of our board roles.</p>
+    </div>
+    <ul class="leaders">
+      <li>Teresa Pan</li>
+      <li>Reyna Li</li>
+      <li>Kian Shahsavari</li>
+      <li>Isaac Liu</li>
+    </ul>
+    <p style="margin-top:2rem" class="thanks">With thanks to Mrs. Anthony, our teacher sponsor at West Point Grey Academy, who gives up a lunch recess every week so the club can run.</p>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div>
       <div class="section-head">
         <h2>Join the team</h2>
         <p>We take on student leaders at each school that hosts the program, and we are always short of people who want to design a session and stand up in front of a room of eight-year-olds.</p>
